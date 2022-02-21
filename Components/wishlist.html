@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cosmos-ui-cl.netlify.app/Styles/cosmos-ui.css"/>
     <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="stylesheet" href="/Components/wishlist.css">
 
 
-    <title>Sole Mates</title>
+    <title>Sole Mates Wishlist</title>
 
 </head>
-<body>
-   
-     <!-- Navigation -->
 
-     <nav class="nav-bar">
+<body>
+    
+    <!-- Navigation -->
+
+    <nav class="nav-bar">
         <div class="nav-section">
             <div class="nav-logo-title-container">
                 <!-- Brand Logo -->
@@ -45,7 +46,7 @@
                 <span class="count">0</span>
             </div>
             <div class="icon-parent">
-                <i class="icon fa-regular fa-heart fa-xl"> <a href="/Components/wishlist.html"></a></i>
+                <i class="icon fa-regular fa-heart fa-xl"></i>
                 <span class="count">0</span>
             </div>
             <button class="btn btn-link">
@@ -55,38 +56,15 @@
         </div>
     </nav>
 
-    <!-- Hero section -->
-    <div class="section-hero">
-        <div class="grid-50-50-layout">
-            <div>
-                <img class="img-responsive" src="/Assets/shoes-hero-3.jpeg">
-            </div> 
-        </div>
+    <div class="text-container">
+        <h1 class="text-container-title">Your Wishlist</h1>
     </div>
 
-    
-    <div class="grid-30-70-layout">
-        <div>
-            <img class="img-responsive" src="/Assets/boysShoesLS.jpg">
-        </div>
-        <div class="text-container">
-            <h1 class="text-container-title">King of Shoes</h1>
-            <h3 class="text-container-desc">Best Value @ Rs.999</h3>
-            <a class="btn btn-primary">Explore</a>
-        </div>
-    </div>
+     <!-- Featured Products -->
 
-    <div class="sale-banner-1">
-        <div class="text-container">
-            <h1 class="text-container-title">Exotic Shoes Sale</h1>
-            <h3 class="text-container-desc">Check out the Featured Products Below</h3>
-            <a class="btn btn-primary">Explore</a>
-        </div>
-    </div>
+<div class="section-wishlisted-items">
 
-    <!-- Featured Products -->
-
-    <div class="grid-4-column-layout">
+     <div class="grid-4-column-layout">
         <div class="card-container">
             <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="card-img">
             <h3 class="card-title">Artistic Weapon</h3>
@@ -94,17 +72,12 @@
             <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
             <div class="card-actions-container">
                 <div class="card-buttons-container">
-                    <button class="card-button">Buy</button>
-                    <button class="card-button">Add to Cart</button>
-                </div>
-                <div class="card-icons-conatainer">
-                    <i class="card-icon fa-regular fa-heart"></i>
-                    <i class="card-icon fa-solid fa-share-nodes"></i>
-                    <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                    <button class="card-button btn btn-primary">Add to Cart</button>
+                    <button class="card-button btn btn-secondary">Remove from Wishlist</button>
                 </div>
             </div>
+            <button class="card-dismiss-button card-icon card-button"><i class="fa-solid fa-heart"></i></button>
         </div>
-
 
         <div class="card-container">
             <img src="/Assets/girlShoes2.jpg" alt="Product-Image" class="card-img">
@@ -113,18 +86,15 @@
             <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
             <div class="card-actions-container">
                 <div class="card-buttons-container">
-                    <button class="card-button">Buy</button>
-                    <button class="card-button">Add to Cart</button>
-                </div>
-                <div class="card-icons-conatainer">
-                    <i class="card-icon fa-regular fa-heart"></i>
-                    <i class="card-icon fa-solid fa-share-nodes"></i>
-                    <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                    <button class="card-button btn btn-primary">Add to Cart</button>
+                    <button class="card-button btn btn-secondary">Remove from Wishlist</button>
                 </div>
             </div>
             <div class="card-badge">New</div>
+            <button class="card-dismiss-button card-icon card-button"><i class="fa-solid fa-heart"></i></button>
         </div>
-  
+
+
         <div class="card-container">
             <img src="/Assets/boysShoes1.jpg" alt="Product-Image" class="card-img">
             <h3 class="card-title">Artistic Weapon</h3>
@@ -132,21 +102,15 @@
             <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
             <div class="card-actions-container">
                 <div class="card-buttons-container">
-                    <button class="card-button">Buy</button>
-                    <button class="card-button">Add to Cart</button>
-                </div>
-                <div class="card-icons-conatainer">
-                    <i class="card-icon fa-regular fa-heart"></i>
-                    <i class="card-icon fa-solid fa-share-nodes"></i>
-                    <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                    <button class="card-button btn btn-primary">Add to Cart</button>
+                    <button class="card-button btn btn-secondary">Remove from Wishlist</button>
                 </div>
             </div>
-            <div class="card-text-overlay-container">
-                <h2 class="card-overlay-text">Sold Out</h2>
-            </div>
+            <div class="card-badge">New</div>
+            <button class="card-dismiss-button card-icon card-button"><i class="fa-solid fa-heart"></i></button>
         </div>
-
-
+  
+    
         <div class="card-container">
             <img src="/Assets/boysShoes3.jpg" alt="Product-Image" class="card-img">
             <h3 class="card-title">Artistic Weapon</h3>
@@ -154,30 +118,23 @@
             <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
             <div class="card-actions-container">
                 <div class="card-buttons-container">
-                    <button class="card-button">Buy</button>
-                    <button class="card-button">Add to Cart</button>
-                </div>
-                <div class="card-icons-conatainer">
-                    <i class="card-icon fa-regular fa-heart"></i>
-                    <i class="card-icon fa-solid fa-share-nodes"></i>
-                    <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                    <button class="card-button btn btn-primary">Add to Cart</button>
+                    <button class="card-button btn btn-secondary">Remove from Wishlist</button>
                 </div>
             </div>
             <div class="card-badge">New</div>
+            <button class="card-dismiss-button card-icon card-button"><i class="fa-solid fa-heart"></i></button>
         </div>
     </div>
+</div>
     
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer>
-            <h3>Made with <span><i class="fa-solid fa-code"></i></span> & ❤️ by Rishabh Rathore</h3>
-            <a class="footer-social-links" href="https://github.com/rishbitsnbytes">Github</a>
-            <a class="footer-social-links" href="https://twitter.com/rishbitsnbytes">Twitter</a>
-            <a class="footer-social-links" href="https://www.linkedin.com/in/rishrathore/">LinkedIn</a>
-        </footer>
-
-
-   
+    <footer>
+        <h3>Made with <span><i class="fa-solid fa-code"></i></span> & ❤️ by Rishabh Rathore</h3>
+        <a class="footer-social-links" href="https://github.com/rishbitsnbytes">Github</a>
+        <a class="footer-social-links" href="https://twitter.com/rishbitsnbytes">Twitter</a>
+        <a class="footer-social-links" href="https://www.linkedin.com/in/rishrathore/">LinkedIn</a>
+    </footer>
 
 </body>
-</html>

@@ -46,3 +46,7 @@ footer {
     margin: 1rem;
     color: var(--primary-color);   
 }
+
+.icon a {
+    text-decoration: un;
+}
