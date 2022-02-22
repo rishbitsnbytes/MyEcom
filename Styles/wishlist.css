@@ -25,3 +25,12 @@
     display: block;
     margin: 1rem 0;
 }
+
+.section-wishlisted-items .btn-secondary:hover,
+.card-icon:hover {
+    background: rgba(221,184,146, 0.5);
+}
+
+.section-wishlisted-items .btn-primary:hover {
+    background: rgba(176,137,104, 0.8);
+}
