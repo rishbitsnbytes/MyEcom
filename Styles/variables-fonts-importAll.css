@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 @import url(./reset.css);
+@import url(./utilites.css);
+@import url(./space-utils.css);
 
 
 body {
@@ -17,6 +19,7 @@ body {
     --extra-bg-color-1: #ffb3c1;
     --extra-bg-color-2: #a0c4ff;
     --dark-bg-color: #072227;
+    --dark-alt-bg-color-2: #e2e2e2;
     --light-alt-bg-color: #F1F1F1; 
     --dark-alt-bg-color: #041C32;
     --text-light-color:  #FFFFFF;

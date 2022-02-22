@@ -1,0 +1,196 @@
+@import url(./styles.css);
+
+
+.main-cart {
+    display: grid;
+    grid-template-columns: 3fr 1.75fr;
+    gap: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.cart-main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--gray);
+    /* grid-column: 1 / -1; */
+    margin: 2rem 0;
+    border-bottom: 2px solid var(--text-dark-color);
+}
+
+.cart-products-shelf {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.main-head {
+    /* grid-column: 1 / -1; */
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.price-head {
+    font-size: large;
+}
+
+.product-shelf-card.card-horizontal {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--light-alt-bg-color);
+    margin: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.product-shelf-card .card-header {
+    height: 15rem;
+    display: block;
+    width: max-content;
+    flex: unset;
+} 
+
+ .card-header img {
+    width: max-content;
+    height: 100%;
+}
+
+.product-shelf-card.card-horizontal .card-main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product-shelf-card.card-horizontal .card-body {    
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem 2rem;
+    margin:0;
+
+}
+
+.card-horizontal .card-body .card-title {
+    text-transform: uppercase;
+    font-size: var(--h5);
+    margin: 0.5rem 0.5rem;
+}
+
+.card-horizontal .card-body .card-subtitle {
+    text-transform: uppercase;
+    font-size: var(--h6);
+    color: var(--text-dark-alt-color);
+    margin: 0.5rem 0.5rem;
+}
+.card-horizontal .card-body .card-details {
+    margin: 0.5rem 0.5rem;
+}
+
+.card-horizontal .card-body .product-qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-horizontal .card-body .product-qty p {
+    text-transform: uppercase;
+    color: var(--text-dark-alt-color);
+    margin: 0.5rem 0.5rem;
+}
+
+.input-product-qty {
+    border-radius: 50%;
+    border: unset;
+    background-color: var(--primary-color);
+    color: var(--text-light-color);
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    outline: none;
+}
+
+.btn.btn-increase-quantity,
+.btn.btn-decrease-quantity {
+    width: 1.5rem ;
+    height: 1.5rem;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-actions-container {
+    gap: 2rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.card-actions-container .btn {
+    font-size: var(--h4);
+    width: 10rem;
+    height: 2rem;
+}
+
+.product-shelf-card.card-horizontal .card-actions-container .btn {
+    margin:0;
+}
+
+.product-shelf-card .card-footer {
+    width: max-content;
+    max-width: max-content;
+    min-width: max-content;
+} 
+
+.product-shelf-separator {
+    border-bottom: 1px solid var(--border-lighter-color);
+    width: 100%;
+}
+
+.shelf-product-card .card-content {
+    height: max-content;
+    width: max-content;
+    flex: unset;
+    align-self: flex-start;
+}
+
+.checkout-container {
+    background-color: var(--dark-alt-bg-color-2);
+    height: max-content;
+    max-width: 100%;
+    flex: display;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.checkout-container .section-head {
+    text-align: center;
+    font-size: var(--h4);
+}
+
+.payment-details .price-charges {
+    font-size: var(--h6);
+    padding: 1rem;
+}
+
+.checkout-container .payment-details, .checkout-container .total-charges {
+    border-top: 2px solid var(--border-dark-color);
+}
+
+.checkout-container .total-charges  {
+    border-bottom: 2px solid var(--border-dark-color);
+    padding: 1rem;
+}
+
+.checkout-container .payment-details {
+    width: 100%;
+}
+ .checkout-container .gift-option {
+     font-size: var(--h6);
+ }

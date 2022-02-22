@@ -1,4 +1,4 @@
-@import url(/Styles/variables-fonts.css);
+@import url(/Styles/variables-fonts-importAll.css);
 
 .section-hero .grid-50-50-layout {
     grid-template-columns: 100%;
@@ -25,6 +25,10 @@
 .card-container img {
     height: 240px;
 }
+
+.card-text-overlay-container {
+    position: absolute;
+    background: rgba(221,184,146, 0.7);
 
 .grid-4-column-layout {
     gap: 3rem;
