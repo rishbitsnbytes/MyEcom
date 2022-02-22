@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rishabh Rathore">
+    <link rel="stylesheet" href="https://cosmos-ui-cl.netlify.app/Styles/cosmos-ui.css"/>
+    <script src="https://kit.fontawesome.com/fa8f01e628.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../Styles/product.css">
+
+    <title>Sole Mates Product Listing Page</title>
+
+</head>
+<body>
+   
+     <!-- Navigation -->
+
+     <nav class="nav-bar">
+        <div class="nav-section">
+            <div class="nav-logo-title-container">
+                <!-- Brand Logo -->
+                <img class="nav-logo" src="/Assets/shoes-icon2.jpg" alt="Logo" width="60" height="60">
+                <!-- Brand Title -->
+                <h1 class="nav-logo-title">Sole Mates</h1>
+            </div>
+        </div>
+
+
+        <!-- search bar -->
+        <div class="nav-section">
+            <div class="search-bar">
+                <span class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input class="search-bar-input" type="text" placeholder="Type to search">
+            </div>
+        </div>
+
+
+        <!-- Icons and Buttons -->
+        <div class="nav-section">
+            <div class="icon-parent">
+                <i class="icon fa-solid fa-cart-shopping fa-xl"></i>
+                <span class="count">0</span>
+            </div>
+            <div class="icon-parent">
+                <i class="icon fa-regular fa-heart fa-xl"><a href="/Components/wishlist.html"></a></i>
+                <span class="count">0</span>
+            </div>
+            <button class="btn btn-link">
+                <a class="btn-link" href="#">Cart</a>
+            </button>
+            <button class="btn btn-primary">Login</button>
+        </div>
+    </nav>
+
+    
+    <!-- Main Section -->
+
+    <main class="products-main my-2 mx-auto py-2 px-3 grid grid-2">
+        <h2 class="main-head text-left mb-2 py-0-25">
+            All products
+        </h2>
+        <aside class="sidebar product-filters py-1-5 px-1">
+            <h2 class="sidebar-head mb-1-5">Filters</h2>
+            <div class="filter-category filter">
+                <ul class="list list-stacked list-style-none mt-1 filter-list">
+                    <h4 class="filter-head text-reg list-head px-0-5 py-0-25 mt-0-5">Category</h4>
+                    <li class="list-item mb-0-25 p-0-25">
+                        <label for="genre-fiction" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-fiction" />
+                            <span class="genre-text">
+                                Sports
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25 p-0-25">
+                        <label for="genre-non-fiction" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-non-fiction" />
+                            <span class="genre-text">
+                                Casual
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25  p-0-25">
+                        <label for="genre-romance" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-romance" />
+                            <span class="genre-text">
+                                Formal
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25  p-0-25">
+                        <label for="genre-classics" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-classics" />
+                            <span class="genre-text">
+                                Classy
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25  p-0-25">
+                        <label for="genre-mystery" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-mystery" />
+                            <span class="genre-text">
+                                Partywear
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25 p-0-25">
+                        <label for="genre-fantasy" class="text-sm genre-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="genre-fantasy" />
+                            <span class="genre-text">
+                                Black
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-price mt-1 mb-2 filter">
+                <ul class="list list-stacked list-style-none mt-1 mb-1-5 filter-list">
+                    <label for="product-price-slider">          <h4 class="filter-head
+                        text-reg list-head px-0-5 py-0-25 my-0-5">Price</h4>
+                        <input type="range" class="input-range" id="product-price-slider" />
+                    </label>
+                    <div class="slider-price-range flex--row flex--justify-between flex--align-center">
+                        <span class="text-sm min-price">₹ 100</span>
+                        <span class="text-sm min-price">₹ 10,000</span>
+                    </div>
+                </ul>   
+            </div>
+            <div class="filter-ratings mt-1 mb-2">
+                <ul class="list-spaced list-style-none">
+                    <h4 class="filter-head text-reg list-head px-0-5 py-0-25 my-0-5 mb-0-5">Ratings</h4>
+                    <li class="list-item mb-0-25">
+                        <label for="label-text" class="text-sm rating-label flex--row flex--align-center">
+                            <input type="radio" class="input-radio" 
+                            id="rating-4-above"
+                            name="product-ratings" checked/>
+                            <span class="genre-text">
+                                4 stars & above
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25">
+                        <label for="rating-3-above" class="text-sm rating-label flex--row flex--align-center">
+                            <input type="radio" class="input-radio" id="rating-3-above"
+                            name="product-ratings" />
+                            <span class="genre-text">
+                                3 stars & above
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25">
+                        <label for="rating-2-above" class="text-sm rating-label flex--row flex--align-center">
+                            <input type="radio" class="input-radio" 
+                            id="rating-2-above" name="product-ratings"/>
+                            <span class="genre-text">
+                                Ratings 2 & above
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25">
+                        <label for="rating-1-above" class="text-sm rating-1-above rating-label flex--row flex--align-center">
+                            <input type="radio" class="input-radio" 
+                            id="rating-1-above" name="product-ratings" />
+                            <span class="genre-text">
+                                Ratings 1 & above
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-category mt-1 mb-2">
+                <ul class="list-spaced list-style-none">
+                    <h4 class="filter-head text-reg list-head px-0-5 py-0-25 mb-0-5">Gender</h4>
+                    <li class="list-item mb-0-25">
+                        <label for="cover-paperback" class="text-sm book-cover-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="cover-paperback" />
+                            <span class="genre-text">
+                                Male
+                            </span>
+                        </label>
+                    </li>
+                    <li class="list-item mb-0-25">
+                        <label for="cover-hardcover" class="text-sm book-cover-label flex--row flex--align-center">
+                            <input type="checkbox" class="input-checkbox" id="cover-hardcover" />
+                            <span class="genre-text">
+                                Female
+                            </span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-clear-filters btn-full-width p-0-5">
+                Clear Filters
+            </button>
+        </aside>
+        <section class="product-catalog">
+            <div class="grid-4-column-layout">
+                <div class="card-container">
+                    <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="card-container">
+                    <img src="/Assets/girlShoes2.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-badge">New</div>
+                </div>
+          
+                <div class="card-container">
+                    <img src="/Assets/boysShoes1.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-text-overlay-container">
+                        <h2 class="card-overlay-text">Sold Out</h2>
+                    </div>
+                </div>
+        
+        
+                <div class="card-container">
+                    <img src="/Assets/boysShoes3.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-badge">New</div>
+                </div>
+
+                <div class="card-container">
+                    <img src="/Assets/girlShoes1.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="card-container">
+                    <img src="/Assets/girlShoes2.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-badge">New</div>
+                </div>
+          
+                <div class="card-container">
+                    <img src="/Assets/boysShoes1.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-text-overlay-container">
+                        <h2 class="card-overlay-text">Sold Out</h2>
+                    </div>
+                </div>
+        
+        
+                <div class="card-container">
+                    <img src="/Assets/boysShoes3.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-badge">New</div>
+                </div>
+
+                 <div class="card-container">
+                    <img src="/Assets/boysShoes1.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-text-overlay-container">
+                        <h2 class="card-overlay-text">Sold Out</h2>
+                    </div>
+                </div>
+        
+        
+                <div class="card-container">
+                    <img src="/Assets/boysShoes3.jpg" alt="Product-Image" class="card-img">
+                    <h3 class="card-title">Artistic Weapon</h3>
+                    <h5 class="card-subtitle">Indian Mother's/Gf's Brahmastra</h5>
+                    <p class="card-para">Will hit best when aimed for head with pointed heel.</p>
+                    <div class="card-actions-container">
+                        <div class="card-buttons-container">
+                            <button class="card-button">Buy</button>
+                            <button class="card-button">Add to Cart</button>
+                        </div>
+                        <div class="card-icons-conatainer">
+                            <i class="card-icon fa-regular fa-heart"></i>
+                            <i class="card-icon fa-solid fa-share-nodes"></i>
+                            <i class="card-icon fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="card-badge">New</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+     <!-- Footer -->
+
+     <footer>
+        <h3>Made with <span><i class="fa-solid fa-code"></i></span> & ❤️ by Rishabh Rathore</h3>
+        <a class="footer-social-links" href="https://github.com/rishbitsnbytes">Github</a>
+        <a class="footer-social-links" href="https://twitter.com/rishbitsnbytes">Twitter</a>
+        <a class="footer-social-links" href="https://www.linkedin.com/in/rishrathore/">LinkedIn</a>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+       
+
+       
+       

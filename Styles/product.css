@@ -1,0 +1,76 @@
+@import url(/Styles/styles.css);
+
+
+
+.products-main {
+    align-items: start;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+.main-head {
+    grid-column: 1/-1;
+    width: 100%;
+}
+
+.products-main .main-head {
+    border-bottom: 3px solid var(--border-dark-color);
+}
+
+.product-filters {
+    border: 1px solid var(--border-lighter-color);
+    width: 220px;
+}
+
+.product-filters .list-head {
+    border-radius: 0.5rem;
+    background-color: var(--light-alt-bg-color);
+}
+
+.product-filters .list-stacked .list-item:hover {
+    border-radius: var(--br-2);
+}
+
+.product-card .list-stacked {
+    border-radius: var(--br-5);
+    
+}
+
+.product-catalog {
+    width: 100%;
+}
+
+.products-container {
+    gap: var(--space-2);
+    justify-items: center;
+}
+
+.products-main .grid-4-column-layout {
+    margin: 0rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+.products-main ul {
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    box-sizing: border-box;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 3rem;
+    margin: 0rem;
+    width: 100%;
+    height: 10rem;
+}
+
+.footer-social-links {
+    margin: 1rem;
+    color: var(--primary-color);   
+}
+
+.icon a {
+    text-decoration: un;
+}

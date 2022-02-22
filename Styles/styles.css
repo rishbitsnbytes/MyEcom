@@ -26,6 +26,10 @@
     height: 240px;
 }
 
+.card-text-overlay-container {
+    position: absolute;
+    background: rgba(221,184,146, 0.7);
+
 .grid-4-column-layout {
     gap: 3rem;
     margin: 2rem;
