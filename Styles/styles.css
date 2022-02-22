@@ -30,9 +30,15 @@
     position: absolute;
     background: rgba(221,184,146, 0.7);
 
+}
+
 .grid-4-column-layout {
     gap: 3rem;
     margin: 2rem;
+}
+.search-bar {
+    width: 30rem;
+    height: 0.5rem;
 }
 
 footer {
@@ -51,6 +57,11 @@ footer {
     color: var(--primary-color);   
 }
 
+nav a {
+    text-decoration: none;
+    color: unset;
+}
+
 .icon a {
-    text-decoration: un;
+    text-decoration: none;
 }
