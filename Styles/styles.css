@@ -1,4 +1,4 @@
-@import url(/Styles/variables-fonts.css);
+@import url(/Styles/variables-fonts-importAll.css);
 
 .section-hero .grid-50-50-layout {
     grid-template-columns: 100%;
